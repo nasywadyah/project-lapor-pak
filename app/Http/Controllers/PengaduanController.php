@@ -99,7 +99,7 @@ class PengaduanController extends Controller
         Http::withHeaders([
             'Authorization' => env('FONNTE_TOKEN')
         ])->post('https://api.fonnte.com/send', [
-            'target' => '6285850369909',
+            'target' => '6285946377456',
             'message' => 'Ada laporan baru dari ' . Auth::user()->name
         ]);
 
